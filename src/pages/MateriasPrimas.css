@@ -1,0 +1,94 @@
+.materias-primas-container {
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+.main-title {
+    color: #cb0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+thead {
+    background-color: #cb0000;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: #ffc107;
+}
+
+.save-button {
+    background-color: #cb0000;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+}
+
+/* Adicionando a largura de cada coluna para um layout melhor */
+.materias-primas-container table th:nth-child(1),
+.materias-primas-container table td:nth-child(1) { width: 10%; }
+.materias-primas-container table th:nth-child(2),
+.materias-primas-container table td:nth-child(2) { width: 30%; }
+.materias-primas-container table th:nth-child(3),
+.materias-primas-container table td:nth-child(3) { width: 10%; }
+.materias-primas-container table th:nth-child(4),
+.materias-primas-container table td:nth-child(4) { width: 10%; }
+.materias-primas-container table th:nth-child(5),
+.materias-primas-container table td:nth-child(5) { width: 15%; }
+.materias-primas-container table th:nth-child(6),
+.materias-primas-container table td:nth-child(6) { width: 15%; }

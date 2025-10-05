@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "CustoPro",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -23,3 +23,4 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+

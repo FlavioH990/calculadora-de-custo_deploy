@@ -10,7 +10,7 @@ import pdfplumber
 
 # Cria uma instância do aplicativo Flask
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://calculadora-custos-r4e0.onrender.com"}})
 
 def limpar_descricao(series):
     return series.astype(str).str.strip().str.lstrip('- ')
@@ -818,4 +818,5 @@ def get_sugestoes_codigos():
 if __name__ == '__main__':
     # Cria o banco e a tabela antes de rodar o servidor
     criar_banco_e_tabela()
+
     app.run(debug=True)

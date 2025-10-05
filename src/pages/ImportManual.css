@@ -1,0 +1,145 @@
+/* Define as cores para o modo claro (padrão) */
+:root {
+  --im-page-bg: #f3f4f6; /* bg-gray-100 */
+  --im-table-bg: white;
+  --im-table-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  --im-thead-bg: #939393;
+  --im-thead-color: white;
+  --im-tr-even-bg: #f4f6f8;
+  --im-input-border: #ccc;
+  --im-input-bg: #fff;
+  --im-input-text: #000;
+  --im-input-focus-border: #007bff;
+  --im-input-focus-shadow: 0px 0px 4px rgba(0,123,255,0.4);
+  --im-add-link-color: #5d5d5d;
+}
+
+/* Define as cores para o modo escuro */
+html.dark {
+  --im-page-bg: #111827; /* Fundo principal escuro */
+  --im-table-bg: #1f2937; /* Fundo da tabela escuro */
+  --im-table-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  --im-thead-bg: #4b5563; /* Cabeçalho da tabela escuro */
+  --im-thead-color: #d1d5db; /* Texto do cabeçalho claro */
+  --im-tr-even-bg: #374151; /* Linha par da tabela escura */
+  --im-input-border: #4b5563; /* Borda do input escura */
+  --im-input-bg: #374151; /* Fundo do input escuro */
+  --im-input-text: #f9fafb; /* Texto do input claro */
+  --im-input-focus-border: #60a5fa; /* Azul claro para foco */
+  --im-input-focus-shadow: 0px 0px 4px rgba(96,165,250,0.4);
+  --im-add-link-color: #9ca3af; /* Cor do link clara */
+}
+
+/* Adicionado para garantir o fundo da página inteira */
+body {
+  background-color: var(--im-page-bg);
+}
+
+.importar-container {
+  padding: 60px;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-importar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.tabela-mp {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: var(--im-table-bg);
+  border-radius: 12px;
+  box-shadow: var(--im-table-shadow);
+}
+
+.tabela-mp thead {
+  background: var(--im-thead-bg);
+  color: var(--im-thead-color);
+}
+
+.tabela-mp th,
+.tabela-mp td {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.tabela-mp th {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabela-mp tr:nth-child(even) {
+  background: var(--im-tr-even-bg);
+}
+
+.tabela-mp input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid var(--im-input-border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--im-input-bg);
+  color: var(--im-input-text);
+  transition: border 0.2s;
+}
+
+.tabela-mp input:focus {
+  border-color: var(--im-input-focus-border);
+  outline: none;
+  box-shadow: var(--im-input-focus-shadow);
+}
+
+.acoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.add-materia-prima {
+  color: var(--im-add-link-color);
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s;
+  background: none; /* Garante que não tenha fundo */
+}
+
+.salvar-mp {
+  background-color: #cb0000;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.salvar-mp:hover {
+  background-color: #930404;
+}
+
+.importar-button {
+  background-color: #e10000;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.importar-button:hover {
+  background-color: #a50000;
+}

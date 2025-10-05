@@ -1,0 +1,141 @@
+.cadastro-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+}
+
+.main-title {
+  text-align: center;
+  color: #333;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-mp-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mp-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.mp-inputs select,
+.mp-inputs input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mp-tabela-box {
+  margin-top: 20px;
+}
+
+.mp-tabela-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mp-tabela-box th,
+.mp-tabela-box td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mp-tabela-box th {
+  background-color: #f8f9fa;
+}
+
+.remove-mp-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.total-container {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.mensagem-feedback {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.tabela-produtos-cadastrados {
+  margin-top: 30px;
+}
+.tabela-produtos-cadastrados table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-produtos-cadastrados th,
+.tabela-produtos-cadastrados td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.tabela-produtos-cadastrados thead th {
+  background-color: #007bff;
+  color: white;
+}
